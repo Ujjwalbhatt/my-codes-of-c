@@ -4,9 +4,10 @@ int main(int argc, char *argv[])
 {   
     char chr[50];
     scanf("%s",&chr);
-    for (int i = 0; i < strlen(chr); i++)
+
+    for (int i = strlen(chr); 0<=i; i--)
     {
-        printf("%c ",chr[i]);
+        printf("%c ",chr[i-1]);
 
     }
     
