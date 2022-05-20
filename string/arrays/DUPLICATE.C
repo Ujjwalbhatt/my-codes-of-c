@@ -1,31 +1,43 @@
 #include<iostream>
+// #include<iomanip>
 using namespace std;
-
-int main()
+bool dup(int *nums)
 {
-    int nums[4]={2,7,3,1};
-    bool a;
-    int i,j,k,n;
-    for(int i=0;i<4;i++)
+    int i,j;
+    int c=0;
+    for(int i=0;i<10;i++)
     {
-        for (int j = 0; j < 4; j++)
+            cout<<"pass: "<<i<<endl;
+        for (int j = i+1; j < 10; j++)
         {
             if (nums[i]==nums[j])
             {
-               
-                goto end;
+           c++;
+           return true;
             }
-            else{
-                continue;
-            }
+         
             
         }
           
         
     }
-       end:
-       {
-           cout<<"True";
-       }
+    if(c==0){
+        return false;
+    }
+}
+int main()
+{
+    int nums[10]={0,0,2,1,5,4,9,6,7,8};
+    
+    int i,j,k,n;
+    bool c=dup(nums);
+      if(c==true)
+      {
+          cout<<"true";
+
+      }
+      else{
+          cout<<"false";
+      }
     return  0;
 }
