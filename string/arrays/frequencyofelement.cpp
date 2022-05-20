@@ -36,6 +36,10 @@ int main()
         }
     }
 
+ if (c<(n/2))
+ {
+      cout<<"No majority element";
+ }
  
     return 0;
 }
