@@ -3,7 +3,7 @@
 int main(){
     int l=0;
     char chr[50];
-    scanf("%s",chr);
+   gets(chr);
     for (int i = 0; chr[i] != '\0'; i++)
     {
         l++;
