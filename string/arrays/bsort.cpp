@@ -14,9 +14,10 @@ void bsa(int *a, int n)
 void bsad(int *a, int n)
 {
     int temp;
-    int ifsorted=1;
+    int ifsorted;
     for (int i = 0; i < n - 1; i++)
     {
+     ifsorted=1;
         cout<<"working on pass number: "<<i+1<<endl; 
         for (int j = 0; j < n - 1 - i; j++)
         {
@@ -43,7 +44,7 @@ void abs( int *a, int n){
 
 int main()
 {
-    int a[] = {1, 5, 6, 2, 3, 4};
+    int a[] = {1,6, 5, 3, 2, 4};
     int n = 6;
     bsa(a, n);
     bsad(a,n);

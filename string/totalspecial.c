@@ -2,6 +2,10 @@
 
 int main(int argc, char *argv[])
 {
-    printf(" printf%d\n", );
-    return 0;
+int a=12;
+
+{
+    a=122;
+}
+printf("%d",a);
 }
