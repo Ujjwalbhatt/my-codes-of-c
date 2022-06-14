@@ -1,1 +1,1 @@
-   // ch[i]=tolower(ch[i]);
+ str[0]=str[0]-32;
