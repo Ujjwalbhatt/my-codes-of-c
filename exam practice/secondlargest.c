@@ -20,7 +20,7 @@ int main () {
             a2=arr[i];
         }
     }
-    printf("Second laregest number is : %d",a2);
+    printf("Second largest number is : %d",a2);
      
     return 0;
 }
