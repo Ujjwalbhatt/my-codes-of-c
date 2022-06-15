@@ -7,21 +7,21 @@ int main(){
     char ch[100];
     gets(ch);
     int i=0;
+      strlwr(ch);
     while (ch[i]!='\0')
 
     {
-        tolower(ch[i]);
       
         if(ch[i]=='a'||ch[i]=='e'||ch[i]=='i'||ch[i]=='o'||ch[i]=='u')
         {
-            vow++;
+         ch[i]=tolower(ch[i]);
         }
         else{
-            cons++;
+          ch[i] = toupper(ch[i]);
         }
         i++;
     }
-    printf("The number of vowels in string is : %d \n The number of consonant is string is : %d",vow,cons);
+  printf("%s",ch);
     
 return 0;
 }

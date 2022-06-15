@@ -1,1 +1,4 @@
- str[0]=str[0]-32;
+   // for (int i = 1; i < count; i++)
+    // {
+    //     /* code */
+    // }
