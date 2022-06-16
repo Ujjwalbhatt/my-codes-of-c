@@ -10,8 +10,28 @@ int main (int argc, char *argv[]) {
     for (int i = 0; i < n; i++)
     {
         
-    scanf("%d",)
+    scanf("%d",&arr[i]);
+
     }
+    for (int i = 0; i < n; i++)
+    {
+        if (arr[i]>x)
+        {
+            min=arr[i];
+            break;
+
+        }
+    }
+        for (int i = 0; i < n; i++)
+        {
+            if (arr[i]>x&&arr[i]<min)
+            {
+                min=arr[i];
+            }
+            
+        }
+        printf("%d",min);
+    
     
     return 0;
 }
