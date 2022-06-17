@@ -5,7 +5,7 @@ int main () {
     printf("enter the string range: ");
     scanf("%d",&n);
     int arr[n];
-    printf("Enter the Element of the arrays: ");
+    printf("Enter the Element of the arrays in: ");
     for (int i = 0; i < n; i++)
     {
         scanf("%d",&arr[i]);
