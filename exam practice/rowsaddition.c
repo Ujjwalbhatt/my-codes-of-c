@@ -15,12 +15,12 @@ int sum=0;
         }
         
     }
-    for (int i = 0; i < a; i++)
+    for (int j = 0; j < b; j++)
     {
-        sum=0;
-        for (int j = 0; j < b; j++)
+            sum=0;
+        for (int i = 0; i < b; i++)
         {
-            sum=sum+arr[i][j];
+        sum=sum+arr[i][j];
         }
             printf("%d ",sum);
         
