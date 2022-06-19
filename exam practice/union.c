@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
         scanf("%d", &arr1[i]);
     }
     Union(arr,arr1,arr2,n,k,g);
-    for (int i = 0; i < g; i++) 
+    for (int i = 0; i < g; i++)  
     {
         printf("%d ",arr2[i]);
     }
