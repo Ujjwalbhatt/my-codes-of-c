@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include<stdlib.h>
 
 int main()
 {
@@ -12,17 +13,9 @@ int main()
     printf("Input  substring: ");
     gets(sstr);
     int len2 = strlen(sstr);
-    for (int i = 0; i < len1; i++)
-    {
-        while (str[k]==sstr[i])
-         {
-             k++;
-         }
-       if(k==len2){
-           count++;
-           k=0;
-       }
-           
-    }
-   printf("The frequency of substring is : %d ",count);
+    int *i=strstr(str,sstr);
+    printf("%d",i);
+
+
     return 0;
+}
