@@ -26,4 +26,3 @@ int main()
     }
    printf("The frequency of substring is : %d ",count);
     return 0;
-ptintgjoifjgmy amie jjsjla eujjlea ujjeal m y name is ujjwal my nem is ujjwal kjadoiufooiakfnkdguichlfdigbtuiaplgbjbaiughaidughaeiughakjbgoifjhaliufhawjnfoaihgliIJG[SDIFHGLIAOGSD]
