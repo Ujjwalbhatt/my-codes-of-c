@@ -25,12 +25,13 @@ void sortc(int n, char *str)
             if(str[j]>str[j+1]){
                 temp=str[j];
                 str[j]=str[j+1];
-                str[j+1]=str[j];
+                str[j+1]=temp;
 
             }
         }
         
     }
+     printf("%s \n", str);
     
 }
 int main()
