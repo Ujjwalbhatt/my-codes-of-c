@@ -1,17 +1,17 @@
 #include <stdio.h>
 #include<string.h>
-// #include<stdlib.h>
+
 int main(){
 
 
-char mainstring[50]="r prince  is      a     goodboy";
-char substring[30]="rp";
+char mainstring[50]="prince is a goodboy";
+char substring[30]="prince";
 char * result;
 result=strstr(mainstring,substring);
 if(result){
     printf("substring exixts");
 }
-else{jhbuyh
+else{
     printf("invalid");
 }
 
