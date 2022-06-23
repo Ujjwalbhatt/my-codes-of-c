@@ -1,36 +1,29 @@
-#include <iostream>
-using namespace std;
- 
-void palindrome(int arr[], int n)
+// check wheather the arrays is palindrome or not
+#include <stdio.h>
+int main()
 {
-    // Initialise flag to zero.
-    int flag = 0;
- 
-    // Loop till array size n/2.
-    for (int i = 0; i <= n / 2 && n != 0; i++) {
- 
-        // Check if first and last element are different
-        // Then set flag to 1.
-        if (arr[i] != arr[n - i - 1]) {
+    int flag = 0, n;
+    printf("Enter the range of the arrays: ");
+    scanf("%d", &n);
+    int arr[n];
+    for (int i = 0; i < n; i++)
+    {
+    }
+
+    for (int i = 0; i <= n / 2 && n != 0; i++)
+    {
+
+        if (arr[i] != arr[n - i - 1])
+        {
             flag = 1;
             break;
         }
     }
- 
-    // If flag is set then print Not Palindrome
-    // else print Palindrome.
+
     if (flag == 1)
-        cout << "Not Palindrome";
+        printf("Not a palindrome");
     else
-        cout << "Palindrome";
-}
- 
-// Driver code.
-int main()
-{
-    int arr[] = { 1, 2, 3, 2, 1 };
-    int n = sizeof(arr) / sizeof(arr[0]);
- 
-    palindrome(arr, n);
+
+        printf("palindrome");
     return 0;
 }

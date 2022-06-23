@@ -1,3 +1,4 @@
+//sort two arrays and merge them
 #include <stdio.h>
 void sorting(int *ar, int n)
 {

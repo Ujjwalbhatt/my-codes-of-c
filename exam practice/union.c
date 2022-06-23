@@ -1,36 +1,28 @@
-/* Bubble sort code */
+/* union of two arrays */
 
 #include <stdio.h>
 
-int main()
-{
-  int arr[100], n, i, j, temp;
+main(){
+   int i,size1,size2,size,j=0,k;
+   printf("Enter size of an array1\n");
+   scanf("%d",&size1);
+   printf("Enter size of an array2\n");
+   scanf("%d",&size2);
+   int a[size1],b[size2],uni[size1+size2];
+   printf("Enter numbers for array 1: ");
+   for(i=0;i<size1;i++){
+      scanf("%d",&a[i]);
+   }
+   printf("Enter numbers for array 2: ");
+   for(i=0;i<size2;i++){
+      scanf("%d",&b[i]);
+   }
 
-  printf("Enter number of elements\n");
-  scanf("%d", &n);
-
-  printf("Enter %d integers\n", n);
-
-  for (i = 0; i< n; i++)
-    scanf("%d", &arr[i]);
-
-  for (i = 0 ; i < n - 1; i++)
-  {
-    for (j = 0 ; j < n - i - 1; j++)
-    {
-      if (arr[j] > arr[j+1]) /* For decreasing order use '<' instead of '>' */
-      {
-        temp       = arr[j];
-        arr[j]   = arr[j+1];
-        arr[j+1] = temp;
-      }
-    }
-  }
-
-  printf("Sorted list in ascending order:\n");
-
-  for (i = 0; i < n; i++)
-     printf("%d ", arr[i]);
-
-  return 0;
-}
+   for(i=0;i<size1;i++){
+      uni[j]=a[i];
+      j++;
+   }
+   for(i=0;i<size2;i++){
+      uni[j]=b[i];
+      j++;
+   }
