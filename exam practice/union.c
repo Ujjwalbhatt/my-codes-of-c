@@ -1,5 +1,4 @@
 #include <stdio.h>
-int removerepeated(int size, int a[]);
 
 int main()
 {
@@ -8,7 +7,8 @@ int main()
    scanf("%d", &size1);
    printf("Enter size of an array2\n");
    scanf("%d", &size2);
-   int a[size1], b[size2], uni[size1 + size2];
+   size = size1 + size2;
+   int a[size1], b[size2], uni[size];
    printf("Enter numbers for array 1\n");
    for (i = 0; i < size1; i++)
    {
@@ -19,7 +19,7 @@ int main()
    {
       scanf("%d", &b[i]);
    }
- 
+
    for (i = 0; i < size1; i++)
    {
       uni[j] = a[i];
@@ -31,27 +31,15 @@ int main()
       j++;
    }
 
-   size = removerepeated(size1 + size2, uni);
-   printf("Array afetr Union \n");
-   for (i = 0; i < size; i++)
-   {
-      printf("%d ", uni[i]);
-   }
-   return 0;
-
-}
-int removerepeated(int size, int* a)
-{
-   int i, j, k;
    for (i = 0; i < size; i++)
    {
       for (j = i + 1; j < size;)
       {
-         if (a[i] == a[j])
+         if (uni[i] == uni[j])
          {
             for (k = j; k < size; k++)
             {
-               a[k] = a[k + 1];
+               uni[k] = uni[k + 1];
             }
             size--;
          }
@@ -61,5 +49,10 @@ int removerepeated(int size, int* a)
          }
       }
    }
-   return (size);
+   printf("Array afetr Union: ");
+   for (i = 0; i < size; i++)
+   {
+      printf("%d ", uni[i]);
+   }
+   return 0;
 }
