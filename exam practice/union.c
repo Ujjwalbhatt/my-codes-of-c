@@ -1,47 +1,36 @@
+/* Bubble sort code */
+
 #include <stdio.h>
 
-void Union(int *arr,int *arr1,int *arr2, int n,int k,int g){
-    int j=0;
-    for (int i = 0; i < n; i++)
-    {
-           arr2[j]=arr[i];
-           j++;
-    }
-    for (int i = 0; i < k; i++)
-    {
-           arr2[j]=arr1[i];
-           j++;
-    }
-    
-}
-int main(int argc, char *argv[])
+int main()
 {
-    int n, k;
-    printf("Enter the range of the both arrays: ");
-    scanf("%d %d", &n, &k);
-    int arr[n];
-    int arr1[k];
-    int g=n+k;
-    int arr2[g];
-    printf("Enter the element of the arrays 1 : ");
+  int arr[100], n, i, j, temp;
 
-    for (int i = 0; i < n; i++)
+  printf("Enter number of elements\n");
+  scanf("%d", &n);
+
+  printf("Enter %d integers\n", n);
+
+  for (i = 0; i< n; i++)
+    scanf("%d", &arr[i]);
+
+  for (i = 0 ; i < n - 1; i++)
+  {
+    for (j = 0 ; j < n - i - 1; j++)
     {
-        scanf("%d", &arr[i]);
+      if (arr[j] > arr[j+1]) /* For decreasing order use '<' instead of '>' */
+      {
+        temp       = arr[j];
+        arr[j]   = arr[j+1];
+        arr[j+1] = temp;
+      }
     }
+  }
 
-    printf("Enter the element of the arrays 2 : ");
+  printf("Sorted list in ascending order:\n");
 
-    for (int i = 0; i < k; i++)
-    {
-        scanf("%d", &arr1[i]);
-    }
-    Union(arr,arr1,arr2,n,k,g);
-    for (int i = 0; i < g; i++)  
-    {
-        printf("%d ",arr2[i]);
-    }
-    
+  for (i = 0; i < n; i++)
+     printf("%d ", arr[i]);
 
-    return 0;
+  return 0;
 }

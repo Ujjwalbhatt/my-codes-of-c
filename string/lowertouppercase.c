@@ -1,3 +1,5 @@
+// Upper to lower and lower to upper
+
 #include <stdio.h>
 #include <string.h>
 
@@ -25,7 +27,7 @@ int main()
         i++;
     }
 
-    printf("The concatenated string is: %s \n ", ch);
+    printf("The changed string is: %s \n ", ch);
 
     return 0;
 }
