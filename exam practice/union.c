@@ -1,3 +1,4 @@
+//union of two arrays
 #include <stdio.h>
 
 int main()
@@ -8,7 +9,7 @@ int main()
    printf("Enter size of an array2\n");
    scanf("%d", &size2);
    size = size1 + size2;
-   int a[size1], b[size2], uni[size];
+   int a[size1], b[size2], c[size];
    printf("Enter numbers for array 1\n");
    for (i = 0; i < size1; i++)
    {
@@ -22,12 +23,12 @@ int main()
 
    for (i = 0; i < size1; i++)
    {
-      uni[j] = a[i];
+      c[j] = a[i];
       j++;
    }
    for (i = 0; i < size2; i++)
    {
-      uni[j] = b[i];
+   c[j] = b[i];
       j++;
    }
 
@@ -35,11 +36,11 @@ int main()
    {
       for (j = i + 1; j < size;)
       {
-         if (uni[i] == uni[j])
+         if (c[i] == c[j])
          {
             for (k = j; k < size; k++)
             {
-               uni[k] = uni[k + 1];
+               c[k] = c[k + 1];
             }
             size--;
          }
@@ -49,10 +50,10 @@ int main()
          }
       }
    }
-   printf("Array afetr Union: ");
+   printf("Array after Union: ");
    for (i = 0; i < size; i++)
    {
-      printf("%d ", uni[i]);
+      printf("%d ", c[i]);
    }
    return 0;
 }
