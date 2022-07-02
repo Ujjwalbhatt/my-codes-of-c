@@ -11,7 +11,7 @@ int linearsearch(int arr[],int n,int element){
     return -1;
     
 }
-int binarysearch(int arr[],int n,int element){
+int binarysearch(int arr[],int n,int element){ 
     int mid,high=n-1,low=0;
     while (low<=high)
     {
