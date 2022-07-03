@@ -34,7 +34,7 @@ int main()
 
         {
 
-            scanf("%d", &array[i][j]);
+            scanf("%d",  &array[i][j]);
         }
     }
 
