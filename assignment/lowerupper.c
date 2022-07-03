@@ -6,28 +6,26 @@
 int main()
 {
     char ch[100];
-    char ch2[100];
     gets(ch);
-   
-    // gets(ch2);
-    // printf("The second string is: %s \n",ch2);
-    int len = strlen(ch);
+   int up=0,low=0;
+  
     int i=0;
+  
     while (ch[i] != '\0')
     {
         if (ch[i] >= 'A' && ch[i] <= 'Z')
         {
 
-            ch[i]=ch[i]+32;
+            up++;
         }
-        else
+        else if(ch[i]>='a' && ch[i]<='z')
         {
-            ch[i]=ch[i]-32; 
+           low++;
         }
         i++;
     }
 
-    printf("The changed string is: %s \n ", ch);
+    printf("freuwnecy of upper character: %d \n frequency of lower character: %d ",up,low);
 
     return 0;
 }

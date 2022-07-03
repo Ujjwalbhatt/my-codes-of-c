@@ -6,15 +6,15 @@ void extract(char *str, char *sst){
     {
       
         
-        sst[g]=str[i];
-        g++;
+        sst[g++]=str[i];
+        
     }
-    str[g]='\0';
+    sst[g]='\0';
 }
 int main (int argc, char *argv[]) {
  
-    char str[100];
-    char sst[100];
+    char str[1000];
+    char sst[1000];
     gets(str);
    int g=0;
 extract(str, sst);
