@@ -15,6 +15,9 @@ int main (int argc, char *argv[]) {
  
     char str[1000];
     char sst[1000];
+    printf("Enter the string: ");
+    
+    
     gets(str);
    int g=0;
 extract(str, sst);
