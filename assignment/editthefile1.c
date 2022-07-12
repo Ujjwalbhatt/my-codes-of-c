@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-void palindrome()
-
 int main()
 {
     char str[642];
