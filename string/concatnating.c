@@ -31,6 +31,7 @@ printf("the concatenation of two string are:\n");
 for(i=0;i<t;i++)
 {
     printf("%c",str3[i]);
+    str[i]
 }
 return 0;
 }

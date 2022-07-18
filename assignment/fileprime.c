@@ -1,3 +1,9 @@
+/*
+3.Write a C program to read the N integers typed on a Command line by the user.
+  Find the number of primes, if a number is prime then write to a file “Prime.txt”. 
+  Display the content of that file on the screen.
+*/ 
+
 #include <stdio.h>
 #include <math.h>
 

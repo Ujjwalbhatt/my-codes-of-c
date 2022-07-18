@@ -13,8 +13,8 @@ int main()
     printf("Input  substring: ");
     gets(sstr);
     int len2 = strlen(sstr);
-    int *i=strstr(str,sstr);
-    printf("%d",i);
+    char *i=strstr(str,sstr);
+    printf("%c",i);
 
 
     return 0;

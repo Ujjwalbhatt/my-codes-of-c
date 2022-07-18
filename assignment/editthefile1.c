@@ -1,3 +1,8 @@
+/* 1 .Draw a flowchart and also write a C program to create a file “Sample.txt” 
+in the current path of the program then accept a paragraph from the user and 
+store all the text in the file by removing the articles ‘a’ , ‘an’ , ‘the’ present 
+ in it.*/ 
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -10,12 +15,10 @@ int main()
     int i = 0;
     int j = 0;
     int k = 0;
-    int l1 = 0;
-    int l2 = 0;
 
     printf("Enter string: ");
     scanf("%[^;]s", str);
-
+    
     while (str[i] != '\0')
     {
         if (str[i] == ' ')
@@ -46,13 +49,16 @@ int main()
         if (strcmp(words[i], "the") == 0 ||strcmp(words[i], "a") == 0 || strcmp(words[i], "an") == 0)
             words[i][j] = 0;
     }
-
-    j = 0;
+int ct=0;
+   
 
     for (i = 0; i < k+1; i++)
     {
-        if (words[i][j] == 0)
+        if (words[i][j] == 0){
+
+            ct++;
             continue;
+        }
         else
             fprintf(fp," %s" ,words[i]);
       
@@ -61,10 +67,11 @@ int main()
     fclose(fp);
     char str1[100];
     fopen("sample.txt","r");
- 
-    fscanf (fp,"%[^EOF]s",str1);
-    printf("%s ", str1);
+   
+    fscanf (fp,"%[^EOF]s",&str);
+    printf("%s ", str);
     fclose(fp);
-    
+     printf("%d",ct);
+
     return 0;
 }
