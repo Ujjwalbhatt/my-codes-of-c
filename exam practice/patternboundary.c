@@ -1,19 +1,12 @@
 #include <stdio.h>
-int oddeven(int b){
-   
-   if(b%2==0){
-       return 1;
-   }
-   else
-   return 0;
-}
-int main () {
+
+int main (int argc, char *argv[]) {
     int n,k,sum=0,g,b;
 
     printf("Enter the rows and coloumns of 2d arrays: ");
     scanf("%d %d",&n,&k);
     int arr[n][k];
-    printf("Enter the vlalues of the arrays: \n ");
+    printf("Enter the vlalues of the arrays: \n");
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < k; j++)
@@ -26,18 +19,16 @@ int main () {
     {
         for (int j = 0; j < k; j++)
         {
-            int b=arr[i][j];
-            g= oddeven(arr[i][j]);
-           
-            if(g==1){
-                
-                sum=sum+arr[i][j];
+            if(i == 0 || j == 0 || i == n - 1 || j == n - 1){
+                 printf("%d ",arr[i][j]);
+                 sum=sum+arr[i][j];
             }
-            
+            else{
+            printf("  ");
+            } 
         }
-        
+        printf("\n");
     }
-    printf("%d is the sum of evene numbers present in the arrays",sum);
-    
+    printf("\n%d", sum);
     return 0;
 }
