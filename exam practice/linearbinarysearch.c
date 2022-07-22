@@ -1,18 +1,11 @@
-#include <stdio.h>
-int linearsearch(int arr[],int n,int element){
-    for (int i = 0; i < n; i++)
-    {
-        if (arr[i]==element)
-        {
-                return i;
-        }
-        
+adsjyuf.lak j.l./
     }
     return -1;
     
 }
 int binarysearch(int arr[],int n,int element){ 
     int mid,high=n-1,low=0;
+
     while (low<=high)
     {
        
