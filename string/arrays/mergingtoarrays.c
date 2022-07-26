@@ -1,5 +1,5 @@
+//merging while sorting arrays
 #include <stdio.h>
-
 int main(int argc, char *argv[])
 {
     int arr[1000], arr1[1000], i=0, j=0, k[1000], t, g, h, x = 0;
