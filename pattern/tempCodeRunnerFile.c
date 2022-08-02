@@ -1,4 +1,2 @@
-  for (int k = 1; k <= i; k++)
-        {
-            printf(" ");
-        }
+ pow(t, k);
+        n = n
