@@ -1,6 +1,7 @@
 /* 4.Design a C program to process the Nett Salary for the current month of N 
 employees working in an organization */ 
 #include <stdlib.h>
+#include<stdio.h>
 struct salary
 {
     int basic;

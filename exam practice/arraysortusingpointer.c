@@ -1,3 +1,4 @@
+//Arrays sorting using pointers 
 #include <stdio.h>
 void sort(int n, int *arr)
 {
