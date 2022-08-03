@@ -1,6 +1,8 @@
+/* copy the sum of the digit of number in one file 
+to another new file*/
 #include <stdio.h>
 
-int main(int argc, char *argv[])
+int main()
 {
     FILE *fp;
     FILE *fpr;
