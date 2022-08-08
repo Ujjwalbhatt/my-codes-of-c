@@ -23,7 +23,8 @@ int main()
     for (int i = 1; i <= n; i++)
     {
         printf("Enter the name of the student %d : ", i);
-        scanf("%s", s[i].name);
+        fflush(stdin);
+        gets(s[i].name);
         printf("Enter the roll number of the student: ");
         scanf("%d", &s[i].roll);
         printf("Enter the marks of the student in math: ");
