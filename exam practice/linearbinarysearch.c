@@ -1,9 +1,6 @@
-adsjyuf.lak j.l./
-    }
-    return -1;
-    
-}
-int binarysearch(int arr[],int n,int element){ 
+#include <stdio.h>
+int element;
+int binarysearch(int arr[],int n){ 
     int mid,high=n-1,low=0;
 
     while (low<=high)
@@ -29,8 +26,8 @@ int binarysearch(int arr[],int n,int element){
 int main (int argc, char *argv[]) {
     int arr[]={1,3,5,56,64,73,123,225,444};
     int n=sizeof(arr)/sizeof(int);
-    int element=444;
-    int searchindex=binarysearch(arr, n, element);
+    element=444;
+    int searchindex=binarysearch(arr, n);
     printf("The element %d was found at the %d \n",element,searchindex);
     return 0;
 }
