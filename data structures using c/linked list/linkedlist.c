@@ -15,8 +15,7 @@ void insertatbeg(struct node **head, int x){
     temp->value=x;
     temp->next=*head;
     *head=temp;
-
-
+    
 
 }
 // print the linked list value
